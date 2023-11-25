@@ -1,5 +1,4 @@
 export interface DBCredentials {
-  protocol: string;
   username: string;
   password: string;
   serverAddress: string;

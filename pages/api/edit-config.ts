@@ -7,11 +7,11 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     return;
   }
 
-  const { protocol, username, password, serverAddress, port, dbName } =
-    JSON.parse(req.body);
+  const { username, password, serverAddress, port, dbName } = JSON.parse(
+    req.body
+  );
 
   editConfig({
-    protocol,
     username,
     password,
     serverAddress,

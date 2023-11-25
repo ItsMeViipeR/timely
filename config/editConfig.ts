@@ -5,7 +5,7 @@ import fs from "fs";
 config();
 
 export function editConfig(creds: DBCredentials) {
-  const newUri = `${creds.protocol}://${creds.username}:${creds.password}@${creds.serverAddress}:${creds.port}/${creds.dbName}`;
+  const newUri = `mysql://${creds.username}:${creds.password}@${creds.serverAddress}:${creds.port}/${creds.dbName}`;
 
   let envConfig = fs.readFileSync(".env", "utf8");
 
