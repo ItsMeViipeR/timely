@@ -38,4 +38,8 @@ next-env.d.ts
 # .env
 .env*
 
-db*.*
+# Prisma migrations files
+prisma/migrations
+
+# Docker compose files
+docker-compose.*
